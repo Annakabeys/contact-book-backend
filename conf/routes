@@ -1,0 +1,9 @@
+GET       /             controllers.HomeController.index()
+GET       /contacts     controllers.HomeController.getAllContacts()
+GET       /contacts/:group    controllers.HomeController.searchByGroup(group: String)
+
+POST      /contact-add  controllers.HomeController.addContact()
+
+PATCH      /contact-edit/:id  controllers.HomeController.editContact(id: String)
+
+DELETE   /contact-delete/:id      controllers.HomeController.deleteContact(id: String)
